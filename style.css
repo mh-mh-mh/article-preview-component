@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&family=Outfit:wght@400;700&family=Sofia&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+    --manrope: 'Manrope', sans-serif;
+  }
+
+  body {
+    background-color: var(--LightGrayishBlue);
+    font-family: var(--manrope);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    position: relative;
+    width: 800px;
+    height: 320px;
+    font-family: var(--manrope);
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+  }
+
+  .image img {
+    width: 280px;
+    height: 320px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .descriptions {
+    margin: 20px;
+    padding: 10px;
+    font-family: var(--manrope);
+  }
+
+  .descriptions h2 {
+    padding: 0 30px 0 10px;
+    font-family: var(--manrope);
+    font-size: 25px;
+  }
+
+  .descriptions p {
+    padding: 20px 30px 20px 10px;
+    color: var(--VeryDarkGrayishBlue);
+    font-family: var(--manrope);
+  }
+
+  .profile {
+    width: 500px;
+    height: 50px;
+    display: flex;
+  }
+  .profile img{
+    border-radius: 50%; 
+    height: 40px;
+  }
+
+  .info {
+    font-family: var(--manrope);
+    padding: 0 240px 0 10px;
+  }
+
+  .info h4 {
+    padding-bottom: 0;
+  }
+
+  .info p {
+    padding: 2px 0 0 0;
+    color: var(--DesaturatedDarkBlue);
+    font-size: small;
+  }
+
+  .shareIcon {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    padding: 18px;
+    background-color: var(--LightGrayishBlue);
+  }
+
+  .shareIcon img {
+    position: absolute;
+    left: 7px;
+    top:7px;
+    height: 20px;
+  }
+
+  @media screen and (max-width: 900px) {
+    body {
+      padding: 50px;
+    }
+
+
+    main {
+      width: 450px;
+      height: 700px;
+      border-radius: 10px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .image img {
+      width: 450px;
+      margin-left: 10px;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .descriptions{
+      font-size: 15px;
+      width: 430px;
+    }
+
+    .info {
+    padding: 0 170px 0 10px;
+  }
+
+  }
+
+  @media screen and (max-width: 500px) {
+    body {
+      padding: 70px;
+    }
+  }
+
+
+
