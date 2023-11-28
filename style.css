@@ -98,11 +98,17 @@
     height: 20px;
   }
 
+  @media screen and (max-width: 1000px) {
+    body {
+      padding-right: 50px;
+    }
+  }
+
+
   @media screen and (max-width: 900px) {
     body {
       padding: 50px;
     }
-
 
     main {
       width: 450px;
@@ -128,14 +134,58 @@
     .info {
     padding: 0 170px 0 10px;
   }
-
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 550px) {
     body {
-      padding: 70px;
+      padding-left: 60px;
+      position: relative;
+      margin-top: 70px;
+    }
+
+    main {
+      position: absolute;
+      left: 50px;
     }
   }
 
+
+  @media screen and (max-width: 500px) {
+    body {
+      padding-left: 60px;
+      position: relative;
+    }
+
+    main {
+      position: absolute;
+      left: 50px;
+    }
+  }
+
+
+  @media screen and (max-width: 400px) {
+    body {
+      padding-left: 60px;
+      position: relative;
+    }
+
+    main {
+      position: absolute;
+      left: 50px;
+    }
+  }
+
+
+  @media screen and (max-width: 300px) {
+    body {
+      padding-left: 60px;
+      position: relative;
+    }
+
+    main {
+      position: absolute;
+      left: 50px;
+    }
+  }
 
 
